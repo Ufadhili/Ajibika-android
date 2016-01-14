@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <style name="Theme.Ufadhilitheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarItemBackground">@drawable/selectable_background_ufadhilitheme</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Ufadhilitheme</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Ufadhilitheme</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Ufadhilitheme</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Ufadhilitheme</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Ufadhilitheme</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_ufadhilitheme</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_ufadhilitheme</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Ufadhilitheme</item>
+        <item name="titleTextStyle">@style/ActionBar.CustomTitle</item>
+       
+        <item name="spinnerDropDownItemStyle">@style/spinnerDropDownItemStyle</item>
+                <!-- Light.DarkActionBar specific -->
+        <item name="actionBarWidgetTheme">@style/Theme.Ufadhilitheme.Widget</item>
+        <item name="android:spinnerItemStyle">@style/spinnerItemStyle</item> 
+        <item name="android:spinnerDropDownItemStyle">@style/spinnerDropDownItemStyle</item>
+        <item name="android:titleTextStyle">@style/ActionBar.CustomTitle</item>
+        
+    </style>
+    
+    <style name="ActionBar.Solid.Ufadhilitheme" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/ab_solid_ufadhilitheme</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_ufadhilitheme</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_ufadhilitheme</item>
+        <item name="progressBarStyle">@style/ProgressBar.Ufadhilitheme</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Ufadhilitheme" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@drawable/ab_transparent_ufadhilitheme</item>
+        <item name="progressBarStyle">@style/ProgressBar.Ufadhilitheme</item>
+    </style>
+	
+    <style name="PopupMenu.Ufadhilitheme" parent="@style/Widget.AppCompat.PopupMenu">	
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_ufadhilitheme</item>	
+    </style>
+	
+    <style name="DropDownListView.Ufadhilitheme" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_ufadhilitheme</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Ufadhilitheme" parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_ufadhilitheme</item>
+    </style>
+	
+    <style name="DropDownNav.Ufadhilitheme" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_ufadhilitheme</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_ufadhilitheme</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_ufadhilitheme</item>
+    </style>
+    
+    <style name="ProgressBar.Ufadhilitheme" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_ufadhilitheme</item>
+    </style>
+    
+    <style name="ActionButton.CloseMode.Ufadhilitheme" parent="@style/Widget.AppCompat.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_ufadhilitheme</item>
+    </style>
+    
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Ufadhilitheme.Widget" parent="@style/Theme.AppCompat">
+        <item name="popupMenuStyle">@style/PopupMenu.Ufadhilitheme</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Ufadhilitheme</item>
+    </style>
+     <style name="Underline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+       
+    </style>
+     <style name="spinnerItemStyle">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">#660000</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+      <style name="NewDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+     <!-- ActionBar title text -->
+    <style name="ActionBar.CustomTitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbar_text</item>
+        <!-- The textColor property is backward compatible with the Support Library -->
+    </style>
+</resources>

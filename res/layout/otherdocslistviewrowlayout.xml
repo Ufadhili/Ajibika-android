@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:background="@+drawable/btnstyle" >
+
+    <TextView
+        android:id="@+id/otherdocs_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/itemTitleColor"
+        android:textSize="@dimen/contentTitle"  />
+  
+
+    <View
+         android:id="@+id/otherdocsheaderUnderline"
+         style="@style/Underline"
+         android:layout_marginBottom="5dp"
+                 android:layout_marginTop="@dimen/default_title_indicator_footer_line_height"
+         android:layout_below="@+id/otherdocs_title"
+        />
+
+  
+
+    <Button
+        android:id="@+id/downloadbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_title_indicator_footer_line_height"
+        android:layout_alignRight="@+id/otherdocsheaderUnderline"
+        android:background="@+drawable/btnstyle"
+        android:layout_below="@+id/otherdocsheaderUnderline"
+        android:text="@string/downloadbutton" />
+
+    
+ 
+</RelativeLayout> 

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@+drawable/btnstyle" >
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/itemTitleColor"
+        android:textSize="@dimen/contentTitle" />
+
+   <TextView
+        android:id="@+id/published"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/news_title"
+        android:fontFamily="sans-serif"
+        android:textSize="13sp"
+       />
+
+    <View
+         android:id="@+id/newsheaderUnderline"
+         style="@style/Underline"
+         android:layout_marginBottom="3dp"
+         android:layout_marginTop="2dp"
+         android:layout_below="@+id/published"
+        />
+    <TextView
+        android:id="@+id/news_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dip"
+        android:maxLines="5"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/newsheaderUnderline"
+        android:ellipsize="marquee"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp" />
+    <!--  ListRow Left sied Thumbnail image -->
+   
+
+   
+ 
+</RelativeLayout> 

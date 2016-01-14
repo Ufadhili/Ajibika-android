@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background"
+    android:orientation="vertical"
+     >
+      <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/aboutajibikacontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp" >
+   <ScrollView 
+    xmlns:example="http://schemas.android.com/apk/res/com.unina.ufadhili"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/view_background"
+        android:orientation="vertical"
+        android:padding="5dp"  >
+
+ 
+      <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/actionbar_text"
+        android:orientation="vertical"
+        >
+             <com.loopj.android.image.SmartImageView 
+              android:id="@+id/ajibikaImage" 
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="5dp"
+              android:layout_centerHorizontal="true"
+             />
+      <com.google.android.youtube.player.YouTubePlayerView
+      android:id="@+id/youtube_view"
+      android:layout_width="match_parent"
+      android:layout_below="@+id/ajibikaImage"
+      android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/ajibika_summary"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/youtube_view"
+                    android:lineSpacingExtra="1.5dp"
+                    android:text=""
+                    android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+  </ScrollView>
+ </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

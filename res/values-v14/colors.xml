@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <item name="actionbar_text" type="color">#ffffff</item> 
+     <item name="landing_background" type="color">#660000</item> 
+     <item name="view_background" type="color">#e5e5e5</item> 
+     <item name="listviewseparator" type="color">#e5e5e5</item> 
+     <item name="itemTitleColor" type="color">#981c20</item> 
+     <item name="textColor" type="color">#000000</item> 
+     <item name="refreshcolorA" type="color">#ffffff</item> 
+     <item name="refreshcolorB" type="color">#660000</item> 
+</resources>

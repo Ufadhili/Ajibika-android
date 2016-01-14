@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ajibika</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About Ajibika</string>
+    <string name="action_resources">Devolution Resources</string>
+    <string name="action_search">Search</string>
+    <string name="search_hint">Search Places</string>
+    <string name="search_settings">Search Places</string>
+    <string name="drawer_icon_desc">drawer icons</string>
+    <string name="drawer_open">open drawer</string>
+    <string name="drawer_close">close drawer</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_expandable_list">ExpandableList Demo</string>
+    <string name="commentbutton">Comment</string>
+    <string name="downloadbutton">Download</string>
+    <string name="slogan">Keep an eye on your County</string>
+    <string name="aboutAjibikaTitle">About Ajibika</string>
+    <string name="aboutAjibikaText">With the recent devolution of the government, Ufadhili trust has taken a keen interest in the governance of the counties where they are running projects</string>
+   
+</resources>

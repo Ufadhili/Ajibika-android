@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res/com.unina.ajibika"
+       android:id="@+id/personrelativescroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/view_background"
+        >
+ <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_margin="10dp"
+             android:padding="5dp"
+             android:background="@color/actionbar_text"
+             >
+
+    <TextView
+       android:id="@+id/no_person_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+       android:background="@color/actionbar_text"
+       android:text="Sorry.No content to display.Kindly check later."
+       android:textAppearance="?android:attr/textAppearanceSmall"
+       android:textColor="@color/textColor"
+       android:textSize="15sp" />
+
+</RelativeLayout>
+</RelativeLayout>
+
+
+

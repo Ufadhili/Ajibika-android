@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/actionbar_text"
+    android:padding="10dp" >
+   
+    <ImageView
+        android:id="@+id/ajibikalogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ajibikaslogan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/logo_ajibika_full" />
+
+    <Spinner
+        android:id="@+id/countyspinner"
+        android:layout_width="250dp"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/customspinner"
+        
+      />
+
+    <TextView
+        android:id="@+id/ajibikaslogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/countyspinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/slogan"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/landing_background"
+        android:textSize="25sp" />
+
+</RelativeLayout>

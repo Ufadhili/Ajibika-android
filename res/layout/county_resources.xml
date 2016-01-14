@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background"
+    android:orientation="vertical"
+    >
+    <android.support.v4.widget.SwipeRefreshLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/newscontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+     <ListView
+                android:id="@+id/countyresourceslistview"
+                android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:divider="@color/listviewseparator"
+	            android:dividerHeight="12dp"
+	            android:paddingLeft="12dp"
+	            android:paddingRight="12dp"
+	            android:scrollbarStyle="outsideOverlay">
+     </ListView>
+   </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
+

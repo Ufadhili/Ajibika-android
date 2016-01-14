@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unina.ajibika"
+    android:versionCode="13"
+    android:versionName="2.0.3" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+         <!-- Internet Permissions -->
+	     <uses-permission android:name="android.permission.INTERNET" />
+	     <!-- Network State Permissions -->
+	     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	     <!-- Permission: Writing to SDCard -->
+         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+      <application
+        android:allowBackup="true"
+        android:icon="@drawable/drawer_logo"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Ufadhilitheme" >
+        <activity
+            
+            android:name="com.unina.ajibika.HomeActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation" >
+            
+            <meta-data android:name="android.app.default_searchable"
+                   android:value=".SearchableActivity" />
+            
+        </activity>
+        <activity
+            
+            android:name="com.unina.ajibika.MainActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:noHistory = "true" 
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+         
+        </activity>
+        <activity android:name=".SearchableActivity" >
+        <intent-filter>
+            <action android:name="android.intent.action.SEARCH" />
+        </intent-filter>
+        <meta-data android:name="android.app.searchable"
+                   android:resource="@xml/searchable"/>
+        </activity>
+        
+        <activity android:name=".CountyNewsDetail" 
+android:configChanges="keyboardHidden|orientation"
+></activity>
+         <activity android:name=".DevolutionResources" 
+android:configChanges="keyboardHidden|orientation"
+>
+ 
+        </activity>
+        
+        <activity android:name=".AboutAjibika" 
+android:configChanges="keyboardHidden|orientation"
+></activity>
+        <activity android:name=".CountyProjectDetail" 
+android:configChanges="keyboardHidden|orientation"
+>
+ 
+        </activity>
+        <activity android:name=".CountyPersonDetail" 
+android:configChanges="keyboardHidden|orientation"
+>
+        </activity>
+        
+        
+    </application>
+    
+
+</manifest>

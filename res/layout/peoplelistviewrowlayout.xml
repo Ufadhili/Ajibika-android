@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+   android:background="@+drawable/btnstyle" >
+<!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+ 
+        <com.loopj.android.image.SmartImageView
+        android:id="@+id/personimage"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_alignParentTop="true"
+        android:contentDescription="person image"
+        />
+ 
+    </LinearLayout>
+   
+
+     <TextView
+        android:id="@+id/person_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/thumbnail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/itemTitleColor"
+        android:textSize="@dimen/contentTitle" />
+
+    <TextView
+        android:id="@+id/person_position"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/person_title"
+        android:layout_toRightOf="@id/thumbnail"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="@dimen/default_circle_indicator_radius"
+        android:paddingTop="@dimen/default_circle_indicator_radius"
+       
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/headerUnderline"
+        style="@style/Underline"
+        android:layout_below="@+id/person_position"
+        android:layout_marginBottom="@dimen/default_circle_indicator_radius"
+        android:layout_marginTop="@dimen/default_circle_indicator_radius"
+        android:layout_toRightOf="@id/thumbnail" />
+
+    <TextView
+        android:id="@+id/person_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dip"
+        android:layout_below="@+id/headerUnderline"
+        android:layout_toRightOf="@id/thumbnail"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"/>
+
+    
+
+</RelativeLayout> 

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res/com.unina.ajibika"
+       android:id="@+id/personrelativescroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/view_background"
+        >
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_margin="10dp"
+             android:padding="5dp"
+             android:background="@color/actionbar_text"
+             >
+   <TextView
+        android:id="@+id/PersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+               
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#981c20"
+        android:textSize="25sp" />
+    
+        <com.loopj.android.image.SmartImageView 
+            android:id="@+id/personImage" 
+            android:layout_width="200dp"
+             android:layout_height="200dp"
+             android:layout_margin="5dp"
+             android:layout_below="@+id/PersonName"
+            android:layout_centerHorizontal="true"
+             />
+ 
+  
+   
+
+  
+   <RelativeLayout 
+     android:id="@+id/contentrelativelayout"  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:layout_below="@+id/personImage"
+    android:background="@drawable/customborder" >
+
+		 <RelativeLayout
+		     android:id="@+id/aboutheader"
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:layout_marginBottom="10dp" >
+			
+		   
+
+		   <TextView
+		        android:id="@+id/personSummarytitle"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@+id/personabouticon"
+		        android:fontFamily="sans-serif"
+		        android:textSize="18sp" />
+
+		   <View
+		       android:id="@+id/aboutpersonheaderUnderline"
+		       style="@style/Underline"
+		       android:layout_below="@+id/personSummarytitle"
+		       android:layout_marginBottom="5dp"
+		               android:layout_marginTop="@dimen/default_title_indicator_footer_line_height"
+		       android:background="@color/landing_background" />
+		    
+		 </RelativeLayout>
+          <TextView
+		        android:id="@+id/personSummary"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/aboutheader"
+		        android:layout_marginBottom="10dp"
+		        android:fontFamily="sans-serif"
+		        android:lineSpacingExtra="1.5dp"
+		        android:textSize="15sp"  />
+           <RelativeLayout
+		     android:id="@+id/moreinfoheader"
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:layout_below="@+id/personSummary"
+		     android:layout_marginBottom="10dp" >
+			
+		   
+
+		   <TextView
+		        android:id="@+id/personmoreinfoSummarytitle"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@+id/personmoreinfoicon"
+		        android:fontFamily="sans-serif"
+		        android:textSize="18sp" />
+
+		   <View
+		       android:id="@+id/moreinfopersonheaderUnderline"
+		       style="@style/Underline"
+		       android:layout_below="@+id/personmoreinfoSummarytitle"
+		       android:layout_marginBottom="5dp"
+		               android:layout_marginTop="@dimen/default_title_indicator_footer_line_height"
+		       android:background="@color/landing_background" />
+		    
+		 </RelativeLayout>
+		  <TextView
+		        android:id="@+id/personMoreinfoSummary"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/moreinfoheader"
+		        android:fontFamily="sans-serif"
+		        android:lineSpacingExtra="1.5dp"
+		        android:textSize="15sp"  />
+		
+</RelativeLayout>
+  <WebView 
+
+    android:id="@+id/countypersoncomments"
+    android:layout_below="@+id/contentrelativelayout"
+            android:layout_marginTop="@dimen/default_title_indicator_footer_line_height"
+    android:padding="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+</RelativeLayout></ScrollView>
+</RelativeLayout>
+
+
+

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+   android:background="@+drawable/btnstyle" >
+<!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+ 
+        <com.loopj.android.image.SmartImageView
+        android:id="@+id/project_image"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        
+        
+        />
+ 
+    </LinearLayout>
+   
+
+     <TextView
+        android:id="@+id/project_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/thumbnail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:fontFamily="sans-serif"
+         android:textStyle="bold"
+        android:textColor="@color/itemTitleColor"
+        android:textSize="@dimen/contentTitle"  />
+    <TextView
+        android:id="@+id/projects_year_funded_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/project_title"
+        android:layout_toRightOf="@id/thumbnail"
+        android:fontFamily="sans-serif"
+        android:text="Year:"
+        android:textStyle="bold"
+        android:textSize="13sp"/>
+    <TextView
+        android:id="@+id/projects_year_funded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/project_title"
+        android:layout_toRightOf="@id/projects_year_funded_label"
+        android:fontFamily="sans-serif"
+        android:text="2013"
+        android:textSize="13sp"/>
+
+    
+   <TextView
+        android:id="@+id/projects_status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/project_title"
+        android:layout_toRightOf="@+id/projects_year_funded"
+        android:fontFamily="sans-serif"
+        android:text="Status:"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/projects_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/project_title"
+        android:layout_toRightOf="@+id/projects_status_label"
+        android:fontFamily="sans-serif"
+        android:text="Completed"
+        android:textSize="13sp" />
+
+    
+    <View
+         android:id="@+id/headerUnderline"
+         style="@style/Underline"
+         android:layout_toRightOf="@id/thumbnail"
+         android:layout_marginBottom="2dp"
+         android:layout_marginTop="2dp"
+         android:layout_below="@+id/projects_year_funded"
+        />
+     <TextView
+        android:id="@+id/project_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dip"
+        android:maxLines="5"
+        android:layout_below="@+id/headerUnderline"
+        android:layout_toRightOf="@id/thumbnail"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"/>
+</RelativeLayout> 
